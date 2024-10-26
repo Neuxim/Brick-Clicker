@@ -1,0 +1,24 @@
+#Statss{
+    position: sticky;
+    position: fixed;
+    background-color: lightgray;
+    width: 50%;
+    height: 75%;
+    top:10%;
+    left:25%;
+    z-index: 2;
+    border: 5px solid darkorange;
+    border-radius: 4%;
+    padding: 2%;
+}
+
+
+#numbers{
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}

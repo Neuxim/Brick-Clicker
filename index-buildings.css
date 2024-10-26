@@ -1,0 +1,239 @@
+#building{
+    float: right;
+    width: 25%;
+}
+
+#cements{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement{
+    width: 200px;
+    height: 85px;
+    background-image: url(sprites/cement.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+
+#walls{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall{
+    width: 200px;
+    height: 85px;
+    background-image: url(sprites/wall.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+
+#Houses{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House{
+    width: 240px;
+    height: 170px;
+    background-image: url(sprites/House.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#Estates{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate{
+    width: 240px;
+    height: 170px;
+    background-image: url(sprites/Estate.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#Citys{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City{
+    width: 240px;
+    height: 170px;
+    background-image: url(sprites/City.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#voivodeships{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship{
+    width: 240px;
+    height: 235px;
+    background-image: url(sprites/voivodeship.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#Countrys{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country{
+    width: 240px;
+    height: 235px;
+    background-image: url(sprites/Country.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#Continents{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent{
+    width: 240px;
+    height: 235px;
+    background-image: url(sprites/Continent.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+
+#Planets{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet{
+    width: 240px;
+    height: 235px;
+    background-image: url(sprites/ziemia.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#systems{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system{
+    width: 240px;
+    height: 195px;
+    background-image: url(sprites/systemsloneczny.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}
+#Galaxys{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy{
+    width: 240px;
+    height: 235px;
+    background-image: url(sprites/Galaxy.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    align-self: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: opacity 0.3s ease;
+}

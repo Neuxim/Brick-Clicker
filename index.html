@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cegło Klikacz</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="index-buildings.css">
+    <link rel="stylesheet" href="index-ubgrades.css">
+    <link rel="stylesheet" href="index-stats.css">
+</head>
+<body>
+    <nav id="upper_menu">
+            <button id="save">Save Progres</button>
+            <button id="load">Load Progres</button>
+            <button id="stats">Stats</button>
+    </nav>
+
+    <div id="Statss"  style="display: none;">
+        <div id="numbers">
+            <p>Number of clicks: <div id="clicks">0</div></p>
+            <p>Total bricks Earned: <div id="total">0</div></p>
+            <p>Number of Buildings: <div id="buildings">0</div></p>
+            <p>Time played: <div id="time_played">0s</div></p>
+        </div>
+
+    </div>
+
+    <div id="main_brick_area">
+        <div id="aura_area"></div>
+        <div id="big_brick"></div>
+        <div id="bricks">0</div>
+        <div id="brick_a_second">0/s</div>
+    </div>
+
+    <div id="building">
+        <div id="clicking_power">0</div>
+        <div id="cement" class="unselectable"></div>
+        <div id="cements">0</div>
+        <div id="wall" class="unselectable"></div>
+        <div id="walls">0</div>
+        <div id="House" class="unselectable"></div>
+        <div id="Houses">0</div>
+        <div id="Estate" class="unselectable"></div>
+        <div id="Estates">0</div>
+        <div id="City" class="unselectable"></div>
+        <div id="Citys">0</div>
+        <div id="voivodeship" class="unselectable"></div>
+        <div id="voivodeships">0</div>
+        <div id="Country" class="unselectable"></div>
+        <div id="Countrys">0</div>
+        <div id="Continent" class="unselectable"></div>
+        <div id="Continents">0</div>
+        <div id="Planet" class="unselectable"></div>
+        <div id="Planets">0</div>
+        <div id="system" class="unselectable"></div>
+        <div id="systems">0</div>
+        <div id="Galaxy" class="unselectable"></div>
+        <div id="Galaxys">0</div>
+    </div>
+
+    <div id="ubgrades" class="unselectable">
+        <div id="clicking_2x_1"></div>
+        <div id="clicking_2x_2"></div>
+        <div id="clicking_2x_3"></div>
+        <div id="clicking_2x_4"></div>
+        <div id="clicking_2x_5"></div>
+        <div id="clicking_2x_6"></div>
+
+        <div id="aura_2x_1"></div>
+        <div id="aura_2x_2"></div>
+        <div id="aura_2x_3"></div>
+        <div id="aura_2x_4"></div>
+        <div id="aura_2x_5"></div>
+        <div id="aura_2x_6"></div>
+
+        <div id="cement_2x_1"></div>
+        <div id="cement_2x_2"></div>
+        <div id="cement_2x_3"></div>
+        <div id="cement_2x_4"></div>
+        <div id="cement_2x_5"></div>
+        <div id="cement_2x_6"></div>
+
+        <div id="wall_2x_1"></div>
+        <div id="wall_2x_2"></div>
+        <div id="wall_2x_3"></div>
+        <div id="wall_2x_4"></div>
+        <div id="wall_2x_5"></div>
+        <div id="wall_2x_6"></div>
+
+        <div id="House_2x_1"></div>
+        <div id="House_2x_2"></div>
+        <div id="House_2x_3"></div>
+        <div id="House_2x_4"></div>
+        <div id="House_2x_5"></div>
+        <div id="House_2x_6"></div>
+
+        <div id="Estate_2x_1"></div>
+        <div id="Estate_2x_2"></div>
+        <div id="Estate_2x_3"></div>
+        <div id="Estate_2x_4"></div>
+        <div id="Estate_2x_5"></div>
+        <div id="Estate_2x_6"></div>
+
+        <div id="City_2x_1"></div>
+        <div id="City_2x_2"></div>
+        <div id="City_2x_3"></div>
+        <div id="City_2x_4"></div>
+        <div id="City_2x_5"></div>
+        <div id="City_2x_6"></div>
+
+        <div id="voivodeship_2x_1"></div>
+        <div id="voivodeship_2x_2"></div>
+        <div id="voivodeship_2x_3"></div>
+        <div id="voivodeship_2x_4"></div>
+        <div id="voivodeship_2x_5"></div>
+        <div id="voivodeship_2x_6"></div>
+
+        <div id="Country_2x_1"></div>
+        <div id="Country_2x_2"></div>
+        <div id="Country_2x_3"></div>
+        <div id="Country_2x_4"></div>
+        <div id="Country_2x_5"></div>
+        <div id="Country_2x_6"></div>
+
+        <div id="Continent_2x_1"></div>
+        <div id="Continent_2x_2"></div>
+        <div id="Continent_2x_3"></div>
+        <div id="Continent_2x_4"></div>
+        <div id="Continent_2x_5"></div>
+        <div id="Continent_2x_6"></div>
+
+        <div id="Planet_2x_1"></div>
+        <div id="Planet_2x_2"></div>
+        <div id="Planet_2x_3"></div>
+        <div id="Planet_2x_4"></div>
+        <div id="Planet_2x_5"></div>
+        <div id="Planet_2x_6"></div>
+
+        <div id="system_2x_1"></div>
+        <div id="system_2x_2"></div>
+        <div id="system_2x_3"></div>
+        <div id="system_2x_4"></div>
+        <div id="system_2x_5"></div>
+        <div id="system_2x_6"></div>
+
+        <div id="Galaxy_2x_1"></div>
+        <div id="Galaxy_2x_2"></div>
+        <div id="Galaxy_2x_3"></div>
+        <div id="Galaxy_2x_4"></div>
+        <div id="Galaxy_2x_5"></div>
+        <div id="Galaxy_2x_6"></div>
+    </div>
+
+    <script src="formating number.js"></script>
+
+    <script src="setup.js"></script>
+
+    <script src="animations.js"></script>
+
+    <script src="brick a second.js"></script>
+
+    <script src="refresh.js"></script>
+
+    <script src="brick ubdater.js"></script>
+
+
+    <script src="clicking cost.js"></script>
+
+    <script>
+        var aurau1_cost=1000;
+        var aurau2_cost=5000;
+        var aurau3_cost=100000;
+        var aurau4_cost=1000000;
+        var aurau5_cost=100000000;
+        var aurau6_cost=1000000000;
+
+        document.getElementById("aura_2x_1").innerText = "income +1% from clicking cost: " + formatNumber(aurau1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("aura_2x_2").innerText = "income +1% from clicking cost: " + formatNumber(aurau2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("aura_2x_3").innerText = "income +1% from clicking cost: " + formatNumber(aurau3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("aura_2x_4").innerText = "income +2% from clicking cost: " + formatNumber(aurau4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("aura_2x_5").innerText = "income +2% from clicking cost: " + formatNumber(aurau5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("aura_2x_6").innerText = "income +3% from clicking cost: " + formatNumber(aurau6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("aura_2x_1").onclick = () => {
+            if(bricks >= aurau1_cost && clickin_mulitplayer == 1) {
+                bricks = bricks - aurau1_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.01;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-1.png')";
+                document.getElementById("aura_2x_1").remove();
+            }
+        }
+        document.getElementById("aura_2x_2").onclick = () => {
+            if(bricks >= aurau2_cost && clickin_mulitplayer == 1.01) {
+                bricks = bricks - aurau2_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.01;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-2.png')";
+                document.getElementById("aura_2x_2").remove();
+            }
+        }
+        document.getElementById("aura_2x_3").onclick = () => {
+            if(bricks >= aurau3_cost && clickin_mulitplayer == 1.02) {
+                bricks = bricks - aurau3_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.01;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-3.png')";
+                document.getElementById("aura_2x_3").remove();
+            }
+        }
+        document.getElementById("aura_2x_4").onclick = () => {
+            if(bricks >= aurau4_cost && clickin_mulitplayer == 1.03) {
+                bricks = bricks - aurau4_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.02;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-4.png')";
+                document.getElementById("aura_2x_4").remove();
+            }
+        }
+        document.getElementById("aura_2x_5").onclick = () => {
+            if(bricks >= aurau5_cost && clickin_mulitplayer == 1.05) {
+                bricks = bricks - aurau5_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.02;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-5.png')";
+                document.getElementById("aura_2x_5").remove();
+            }
+        }
+        document.getElementById("aura_2x_6").onclick = () => {
+            if(bricks >= aurau6_cost && clickin_mulitplayer == 1.07) {
+                bricks = bricks - aurau6_cost;
+                clickin_mulitplayer = clickin_mulitplayer + 0.03;
+                document.getElementById("aura_area").style.backgroundImage = "url('sprites/aura-6.png')";
+                document.getElementById("aura_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var cementu1_cost = 100;
+        var cementu2_cost = 500;
+        var cementu3_cost = 7500;
+        var cementu4_cost = 94750;
+        var cementu5_cost = 379000;
+        var cementu6_cost = 3032000;
+
+        document.getElementById("cement_2x_1").innerText = "2x/s from cement cost: " + formatNumber(cementu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("cement_2x_2").innerText = "2x/s from cement cost: " + formatNumber(cementu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("cement_2x_3").innerText = "2x/s from cement cost: " + formatNumber(cementu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("cement_2x_4").innerText = "2x/s from cement cost: " + formatNumber(cementu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("cement_2x_5").innerText = "4x/s from cement cost: " + formatNumber(cementu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("cement_2x_6").innerText = "8x/s from cement cost: " + formatNumber(cementu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("cement_2x_1").onclick = () => {
+            if(bricks >= cementu1_cost && cement_multiplayer == 1) {
+                bricks = bricks - cementu1_cost;
+                cement_multiplayer = cement_multiplayer + 1;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-1.jpg')";
+                document.getElementById("cement_2x_1").remove();
+            }
+        }
+        document.getElementById("cement_2x_2").onclick = () => {
+            if(bricks >= cementu2_cost && cement_multiplayer == 2) {
+                bricks = bricks - cementu2_cost;
+                cement_multiplayer = cement_multiplayer + 2;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-2.jpg')";
+                document.getElementById("cement_2x_2").remove();
+            }
+        }
+        document.getElementById("cement_2x_3").onclick = () => {
+            if(bricks >= cementu3_cost && cement_multiplayer == 4) {
+                bricks = bricks - cementu3_cost;
+                cement_multiplayer = cement_multiplayer + 4;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-3.jpg')";
+                document.getElementById("cement_2x_3").remove();
+            }
+        }
+        document.getElementById("cement_2x_4").onclick = () => {
+            if(bricks >= cementu4_cost && cement_multiplayer == 8) {
+                bricks = bricks - cementu4_cost;
+                cement_multiplayer = cement_multiplayer + 8;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-4.jpg')";
+                document.getElementById("cement_2x_4").remove();
+            }
+        }
+        document.getElementById("cement_2x_5").onclick = () => {
+            if(bricks >= cementu5_cost && cement_multiplayer == 16) {
+                bricks = bricks - cementu5_cost;
+                cement_multiplayer = cement_multiplayer * 4;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-5.jpg')";
+                document.getElementById("cement_2x_5").remove();;
+            }
+        }
+        document.getElementById("cement_2x_6").onclick = () => {
+            if(bricks >= cementu6_cost && cement_multiplayer == 64) {
+                bricks = bricks - cementu6_cost;
+                cement_multiplayer = cement_multiplayer * 8;
+                document.getElementById("cement").style.backgroundImage = "url('sprites/cement-6.jpg')";
+                document.getElementById("cement_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var wallu1_cost = 1000;
+        var wallu2_cost = 5000;
+        var wallu3_cost = 75000;
+        var wallu4_cost = 937500;
+        var wallu5_cost = 7031250;
+        var wallu6_cost = 35156250;
+
+        document.getElementById("wall_2x_1").innerText = "2x/s from walls cost: " + formatNumber(wallu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("wall_2x_2").innerText = "2x/s from walls cost: " + formatNumber(wallu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("wall_2x_3").innerText = "2x/s from walls cost: " + formatNumber(wallu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("wall_2x_4").innerText = "2x/s from walls cost: " + formatNumber(wallu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("wall_2x_5").innerText = "2x/s from walls cost: " + formatNumber(wallu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("wall_2x_6").innerText = "2x/s from walls cost: " + formatNumber(wallu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("wall_2x_1").onclick = () => {
+            if(bricks >= wallu1_cost && walls_multiplayer == 1) {
+                bricks = bricks - wallu1_cost;
+                walls_multiplayer = walls_multiplayer + 1;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-1.jpg')";
+                document.getElementById("wall_2x_1").remove();
+            }
+        }
+        document.getElementById("wall_2x_2").onclick = () => {
+            if(bricks >= wallu2_cost && walls_multiplayer == 2) {
+                bricks = bricks - wallu2_cost;
+                walls_multiplayer = walls_multiplayer + 2;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-2.jpg')";
+                document.getElementById("wall_2x_2").remove();
+            }
+        }
+        document.getElementById("wall_2x_3").onclick = () => {
+            if(bricks >= wallu3_cost && walls_multiplayer == 4) {
+                bricks = bricks - wallu3_cost;
+                walls_multiplayer = walls_multiplayer + 4;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-3.jpg')";
+                document.getElementById("wall_2x_3").remove();
+            }
+        }
+        document.getElementById("wall_2x_4").onclick = () => {
+            if(bricks >= wallu4_cost && walls_multiplayer == 8) {
+                bricks = bricks - wallu4_cost;
+                walls_multiplayer = walls_multiplayer + 8;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-4.jpg')";
+                document.getElementById("wall_2x_4").remove();
+            }
+        }
+        document.getElementById("wall_2x_5").onclick = () => {
+            if(bricks >= wallu5_cost && walls_multiplayer == 16) {
+                bricks = bricks - wallu5_cost;
+                walls_multiplayer = walls_multiplayer + 16;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-5.jpg')";
+                document.getElementById("wall_2x_5").remove();
+             }
+        }
+        document.getElementById("wall_2x_6").onclick = () => {
+            if(bricks >= wallu6_cost && walls_multiplayer == 32) {
+                bricks = bricks - wallu6_cost;
+                walls_multiplayer = walls_multiplayer + 32;
+                document.getElementById("wall").style.backgroundImage = "url('sprites/wall-6.jpg')";
+                document.getElementById("wall_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var Houseu1_cost = 8000;
+        var Houseu2_cost = 40000;
+        var Houseu3_cost = 600000;
+        var Houseu4_cost = 7500000;
+        var Houseu5_cost = 56250000;
+        var Houseu6_cost = 281250000;
+
+        document.getElementById("House_2x_1").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("House_2x_2").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("House_2x_3").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("House_2x_4").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("House_2x_5").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("House_2x_6").innerText = "2x/sfrom Houses cost: " + formatNumber(Houseu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("House_2x_1").onclick = () => {
+            if(bricks >= Houseu1_cost && House_multiplayer == 1) {
+                bricks = bricks - Houseu1_cost;
+                House_multiplayer = House_multiplayer + 1;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-1.jpg')";
+                document.getElementById("House_2x_1").remove();
+            }
+        }
+        document.getElementById("House_2x_2").onclick = () => {
+            if(bricks >= Houseu2_cost && House_multiplayer == 2) {
+                bricks = bricks - Houseu2_cost;
+                House_multiplayer = House_multiplayer + 2;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-2.jpg')";
+                document.getElementById("House_2x_2").remove();
+            }
+        }
+        document.getElementById("House_2x_3").onclick = () => {
+            if(bricks >= Houseu3_cost && House_multiplayer == 4) {
+                bricks = bricks - Houseu3_cost;
+                House_multiplayer = House_multiplayer + 4;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-3.jpg')";
+                document.getElementById("House_2x_3").remove();
+            }
+        }
+        document.getElementById("House_2x_4").onclick = () => {
+            if(bricks >= Houseu4_cost && House_multiplayer == 8) {
+                bricks = bricks - Houseu4_cost;
+                House_multiplayer = House_multiplayer + 8;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-4.jpg')";
+                document.getElementById("House_2x_4").remove();
+            }
+        }
+        document.getElementById("House_2x_5").onclick = () => {
+            if(bricks >= Houseu5_cost && House_multiplayer == 16) {
+                bricks = bricks - Houseu5_cost;
+                House_multiplayer = House_multiplayer + 16;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-5.jpg')";
+                document.getElementById("House_2x_5").remove();
+           }
+        }
+        document.getElementById("House_2x_6").onclick = () => {
+            if(bricks >= Houseu6_cost && House_multiplayer == 32) {
+                bricks = bricks - Houseu6_cost;
+                House_multiplayer = House_multiplayer + 64;
+                document.getElementById("House").style.backgroundImage = "url('sprites/House-6.jpg')";
+                document.getElementById("House_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var Estateu1_cost = 47000;
+        var Estateu2_cost = 235000;
+        var Estateu3_cost = 3525000;
+        var Estateu4_cost = 44062500;
+        var Estateu5_cost = 330468750;
+        var Estateu6_cost = 1652343750;
+
+        document.getElementById("Estate_2x_1").innerText = "2x/s from estates cost: " + formatNumber(Estateu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Estate_2x_2").innerText = "2x/s from estates cost: " + formatNumber(Estateu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Estate_2x_3").innerText = "2x/s from estates cost: " + formatNumber(Estateu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Estate_2x_4").innerText = "2x/s from estates cost: " + formatNumber(Estateu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Estate_2x_5").innerText = "2x/s from estates cost: " + formatNumber(Estateu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Estate_2x_6").innerText = "2x/s from estates cost: " + formatNumber(Estateu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("Estate_2x_1").onclick = () => {
+            if(bricks >= Estateu1_cost && Estate_multiplayer == 1) {
+                bricks = bricks - Estateu1_cost;
+                Estate_multiplayer = Estate_multiplayer + 1;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-1.jpg')";
+                document.getElementById("Estate_2x_1").remove();            }
+        }
+        document.getElementById("Estate_2x_2").onclick = () => {
+            if(bricks >= Estateu2_cost && Estate_multiplayer == 2) {
+                bricks = bricks - Estateu2_cost;
+                Estate_multiplayer = Estate_multiplayer + 2;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-2.jpg')";
+                document.getElementById("Estate_2x_2").remove();            }
+        }
+        document.getElementById("Estate_2x_3").onclick = () => {
+            if(bricks >= Estateu3_cost && Estate_multiplayer == 4) {
+                bricks = bricks - Estateu3_cost;
+                Estate_multiplayer = Estate_multiplayer + 4;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-3.jpg')";
+                document.getElementById("Estate_2x_3").remove();
+            }
+        }
+        document.getElementById("Estate_2x_4").onclick = () => {
+            if(bricks >= Estateu4_cost && Estate_multiplayer == 8) {
+                bricks = bricks - Estateu4_cost;
+                Estate_multiplayer = Estate_multiplayer + 8;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-4.jpg')";
+                document.getElementById("Estate_2x_4").remove();
+            }
+        }
+        document.getElementById("Estate_2x_5").onclick = () => {
+            if(bricks >= Estateu5_cost && Estate_multiplayer == 16) {
+                bricks = bricks - Estateu5_cost;
+                Estate_multiplayer = Estate_multiplayer + 16;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-5.jpg')";
+                document.getElementById("Estate_2x_5").remove();
+            }
+        }
+        document.getElementById("Estate_2x_6").onclick = () => {
+            if(bricks >= Estateu6_cost && Estate_multiplayer == 32) {
+                bricks = bricks - Estateu6_cost;
+                Estate_multiplayer = Estate_multiplayer + 32;
+                document.getElementById("Estate").style.backgroundImage = "url('sprites/Estate-6.jpg')";
+                document.getElementById("Estate_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var Cityu1_cost = 500000;
+        var Cityu2_cost = 2500000;
+        var Cityu3_cost = 37500000;
+        var Cityu4_cost = 468750000;
+        var Cityu5_cost = 3515625000;
+        var Cityu6_cost = 17578125000;
+
+        document.getElementById("City_2x_1").innerText = "2x/s from cities cost: " + formatNumber(Cityu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("City_2x_2").innerText = "2x/s from cities cost: " + formatNumber(Cityu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("City_2x_3").innerText = "2x/s from cities cost: " + formatNumber(Cityu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("City_2x_4").innerText = "2x/s from cities cost: " + formatNumber(Cityu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("City_2x_5").innerText = "2x/s from cities cost: " + formatNumber(Cityu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("City_2x_6").innerText = "2x/s from cities cost: " + formatNumber(Cityu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("City_2x_1").onclick = () => {
+            if(bricks >= Cityu1_cost && City_multiplayer == 1) {
+                bricks = bricks - Cityu1_cost;
+                City_multiplayer = City_multiplayer + 1;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-1.jpg')";
+                document.getElementById("City_2x_1").remove();
+            }
+        }
+        document.getElementById("City_2x_2").onclick = () => {
+            if(bricks >= Cityu2_cost && City_multiplayer == 2) {
+                bricks = bricks - Cityu2_cost;
+                City_multiplayer = City_multiplayer + 2;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-2.jpg')";
+                document.getElementById("City_2x_2").remove();
+            }
+        }
+        document.getElementById("City_2x_3").onclick = () => {
+            if(bricks >= Cityu3_cost && City_multiplayer == 4) {
+                bricks = bricks - Cityu3_cost;
+                City_multiplayer = City_multiplayer + 4;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-3.jpg')";
+                document.getElementById("City_2x_3").remove();;
+            }
+        }
+        document.getElementById("City_2x_4").onclick = () => {
+            if(bricks >= Cityu4_cost && City_multiplayer == 8) {
+                bricks = bricks - Cityu4_cost;
+                City_multiplayer = City_multiplayer + 8;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-4.jpg')";
+                document.getElementById("City_2x_4").remove();
+            }
+        }
+        document.getElementById("City_2x_5").onclick = () => {
+            if(bricks >= Cityu5_cost && City_multiplayer == 16) {
+                bricks = bricks - Cityu5_cost;
+                City_multiplayer = City_multiplayer + 16;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-5.jpg')";
+                document.getElementById("City_2x_5").remove();
+            }
+        }
+        document.getElementById("City_2x_6").onclick = () => {
+            if(bricks >= Cityu6_cost && City_multiplayer == 32) {
+                bricks = bricks - Cityu6_cost;
+                City_multiplayer = City_multiplayer + 32;
+                document.getElementById("City").style.backgroundImage = "url('sprites/City-6.jpg')";
+                document.getElementById("City_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var voivodeshipu1_cost = 4000000;
+        var voivodeshipu2_cost = 20000000;
+        var voivodeshipu3_cost = 300000000;
+        var voivodeshipu4_cost = 3750000000;
+        var voivodeshipu5_cost = 28125000000;
+        var voivodeshipu6_cost = 140625000000;
+
+        document.getElementById("voivodeship_2x_1").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("voivodeship_2x_2").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("voivodeship_2x_3").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("voivodeship_2x_4").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("voivodeship_2x_5").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("voivodeship_2x_6").innerText = "2x/s from voivodeships cost: " + formatNumber(voivodeshipu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("voivodeship_2x_1").onclick = () => {
+            if(bricks >= voivodeshipu1_cost && voivodeship_multiplayer == 1) {
+                bricks = bricks - voivodeshipu1_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 1;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-1.png')";
+                document.getElementById("voivodeship_2x_1").remove();
+            }
+        }
+        document.getElementById("voivodeship_2x_2").onclick = () => {
+            if(bricks >= voivodeshipu2_cost && voivodeship_multiplayer == 2) {
+                bricks = bricks - voivodeshipu2_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 2;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-2.png')";
+                document.getElementById("voivodeship_2x_2").remove();
+            }
+        }
+        document.getElementById("voivodeship_2x_3").onclick = () => {
+            if(bricks >= voivodeshipu3_cost && voivodeship_multiplayer == 4) {
+                bricks = bricks - voivodeshipu3_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 4;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-3.png')";
+                document.getElementById("voivodeship_2x_3").remove();
+            }
+        }
+        document.getElementById("voivodeship_2x_4").onclick = () => {
+            if(bricks >= voivodeshipu4_cost && voivodeship_multiplayer == 8) {
+                bricks = bricks - voivodeshipu4_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 8;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-4.png')";
+                document.getElementById("voivodeship_2x_4").remove();
+            }
+        }
+        document.getElementById("voivodeship_2x_5").onclick = () => {
+            if(bricks >= voivodeshipu5_cost && voivodeship_multiplayer == 16) {
+                bricks = bricks - voivodeshipu5_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 16;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-5.png')";
+                document.getElementById("voivodeship_2x_5").remove();
+            }
+        }
+        document.getElementById("voivodeship_2x_6").onclick = () => {
+            if(bricks >= voivodeshipu6_cost && voivodeship_multiplayer == 32) {
+                bricks = bricks - voivodeshipu6_cost;
+                voivodeship_multiplayer = voivodeship_multiplayer + 32;
+                document.getElementById("voivodeship").style.backgroundImage = "url('sprites/voivodeship-6.png')";
+                document.getElementById("voivodeship_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var Countryu1_cost = 35000000;
+        var Countryu2_cost = 175000000;
+        var Countryu3_cost = 2625000000;
+        var Countryu4_cost = 32812500000;
+        var Countryu5_cost = 246093750000;
+        var Countryu6_cost = 1230468750000;
+
+        document.getElementById("Country_2x_1").innerText = "2x/s from countries cost: " + formatNumber(Countryu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Country_2x_2").innerText = "2x/s from countries cost: " + formatNumber(Countryu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Country_2x_3").innerText = "2x/s from countries cost: " + formatNumber(Countryu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Country_2x_4").innerText = "2x/s from countries cost: " + formatNumber(Countryu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Country_2x_5").innerText = "2x/s from countries cost: " + formatNumber(Countryu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Country_2x_6").innerText = "2x/s from countries cost: " + formatNumber(Countryu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("Country_2x_1").onclick = () => {
+            if(bricks >= Countryu1_cost && Country_multiplayer == 1) {
+                bricks = bricks - Countryu1_cost;
+                Country_multiplayer = Country_multiplayer + 1;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-1.png')";
+                document.getElementById("Country_2x_1").remove();;
+            }
+        }
+        document.getElementById("Country_2x_2").onclick = () => {
+            if(bricks >= Countryu2_cost && Country_multiplayer == 2) {
+                bricks = bricks - Countryu2_cost;
+                Country_multiplayer = Country_multiplayer + 2;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-2.png')";
+                document.getElementById("Country_2x_2").remove();
+            }
+        }
+        document.getElementById("Country_2x_3").onclick = () => {
+            if(bricks >= Countryu3_cost && Country_multiplayer == 4) {
+                bricks = bricks - Countryu3_cost;
+                Country_multiplayer = Country_multiplayer + 4;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-3.png')";
+                document.getElementById("Country_2x_3").remove();
+            }
+        }
+        document.getElementById("Country_2x_4").onclick = () => {
+            if(bricks >= Countryu4_cost && Country_multiplayer == 8) {
+                bricks = bricks - Countryu4_cost;
+                Country_multiplayer = Country_multiplayer + 8;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-4.png')";
+                document.getElementById("Country_2x_4").remove();
+            }
+        }
+        document.getElementById("Country_2x_5").onclick = () => {
+            if(bricks >= Countryu5_cost && Country_multiplayer == 16) {
+                bricks = bricks - Countryu5_cost;
+                Country_multiplayer = Country_multiplayer + 16;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-5.png')";
+                document.getElementById("Country_2x_5").remove();
+            }
+        }
+        document.getElementById("Country_2x_6").onclick = () => {
+            if(bricks >= Countryu6_cost && Country_multiplayer == 32) {
+                bricks = bricks - Countryu6_cost;
+                Country_multiplayer = Country_multiplayer + 32;
+                document.getElementById("Country").style.backgroundImage = "url('sprites/Country-6.png')";
+                document.getElementById("Country_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var kontynetu1_cost = 160000000;
+        var kontynetu2_cost = 800000000;
+        var kontynetu3_cost = 12000000000;
+        var kontynetu4_cost = 150000000000;
+        var kontynetu5_cost = 1125000000000;
+        var kontynetu6_cost = 5625000000000;
+
+        document.getElementById("Continent_2x_1").innerText = "2x/s from continents cost: " + formatNumber(kontynetu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Continent_2x_2").innerText = "2x/s from continents cost: " + formatNumber(kontynetu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Continent_2x_3").innerText = "2x/s from continents cost: " + formatNumber(kontynetu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Continent_2x_4").innerText = "2x/s from continents cost: " + formatNumber(kontynetu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Continent_2x_5").innerText = "2x/s from continents cost: " + formatNumber(kontynetu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Continent_2x_6").innerText = "2x/s0 from continents cost: " + formatNumber(kontynetu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("Continent_2x_1").onclick = () => {
+            if(bricks >= kontynetu1_cost && Continent_muliplayer == 1) {
+                bricks = bricks - kontynetu1_cost;
+                Continent_muliplayer = Continent_muliplayer + 1;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-1.png')";
+                document.getElementById("Continent_2x_1").remove();
+            }
+        }
+        document.getElementById("Continent_2x_2").onclick = () => {
+            if(bricks >= kontynetu2_cost && Continent_muliplayer == 2) {
+                bricks = bricks - kontynetu2_cost;
+                Continent_muliplayer = Continent_muliplayer + 2;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-2.png')";
+                document.getElementById("Continent_2x_2").remove();
+            }
+        }
+        document.getElementById("Continent_2x_3").onclick = () => {
+            if(bricks >= kontynetu3_cost && Continent_muliplayer == 4) {
+                bricks = bricks - kontynetu3_cost;
+                Continent_muliplayer = Continent_muliplayer + 4;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-3.png')";
+                document.getElementById("Continent_2x_3").remove();
+            }
+        }
+        document.getElementById("Continent_2x_4").onclick = () => {
+            if(bricks >= kontynetu4_cost && Continent_muliplayer == 8) {
+                bricks = bricks - kontynetu4_cost;
+                Continent_muliplayer = Continent_muliplayer + 8;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-4.png')";
+                document.getElementById("Continent_2x_4").remove();
+            }
+        }
+        document.getElementById("Continent_2x_5").onclick = () => {
+            if(bricks >= kontynetu5_cost && Continent_muliplayer == 16) {
+                bricks = bricks - kontynetu5_cost;
+                Continent_muliplayer = Continent_muliplayer + 16;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-5.png')";
+                document.getElementById("Continent_2x_5").remove();
+            }
+        }
+        document.getElementById("Continent_2x_6").onclick = () => {
+            if(bricks >= kontynetu6_cost && Continent_muliplayer == 32) {
+                bricks = bricks - kontynetu6_cost;
+                Continent_muliplayer = Continent_muliplayer + 32;
+                document.getElementById("Continent").style.backgroundImage = "url('sprites/Continent-6.png')";
+                document.getElementById("Continent_2x_6").remove();
+            }
+        }
+    </script>
+
+    <script>
+        var Planetu1_cost =30000000000;
+        var Planetu2_cost =150000000000;
+        var Planetu3_cost =2250000000000;
+        var Planetu4_cost =28125000000000;
+        var Planetu5_cost =210937500000000;
+        var Planetu6_cost =1054687500000000;
+
+        document.getElementById("Planet_2x_1").innerText = "2x/s from Planets cost: " + formatNumber(Planetu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Planet_2x_2").innerText = "2x/s from Planets cost: " + formatNumber(Planetu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Planet_2x_3").innerText = "2x/s from Planets cost: " + formatNumber(Planetu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Planet_2x_4").innerText = "2x/s from Planets cost: " + formatNumber(Planetu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Planet_2x_5").innerText = "2x/s from Planets cost: " + formatNumber(Planetu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Planet_2x_6").innerText = "2x/s from Planets cost: " + formatNumber(Planetu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("Planet_2x_1").onclick = () => {
+            if(bricks >= Planetu1_cost && Planet_mulitiplayer == 1) {
+                bricks = bricks - Planetu1_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 1;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-1.png')";
+                document.getElementById("Planet_2x_1").remove();
+            }
+        }
+        document.getElementById("Planet_2x_2").onclick = () => {
+            if(bricks >= Planetu2_cost && Planet_mulitiplayer == 2) {
+                bricks = bricks - Planetu2_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 2;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-2.png')";
+                document.getElementById("Planet_2x_2").remove();
+            }
+        }
+        document.getElementById("Planet_2x_3").onclick = () => {
+            if(bricks >= Planetu3_cost && Planet_mulitiplayer == 4) {
+                bricks = bricks - Planetu3_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 4;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-3.png')";
+                document.getElementById("Planet_2x_3").remove();
+            }
+        }
+        document.getElementById("Planet_2x_4").onclick = () => {
+            if(bricks >= Planetu4_cost && Planet_mulitiplayer == 8) {
+                bricks = bricks - Planetu4_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 8;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-4.png')";
+                document.getElementById("Planet_2x_4").remove();
+                document.getElementById("Planet_2x_4").innerText = "";
+                document.getElementById("Planet").innerText = "Planet - generates "+formatNumber(30000000*Planet_mulitiplayer, {useOrderSuffix: true, decimals: 1})+" bricks per second and costs " + formatNumber(Planet_cost, {useOrderSuffix: true, decimals: 2});
+            }
+        }
+        document.getElementById("Planet_2x_5").onclick = () => {
+            if(bricks >= Planetu5_cost && Planet_mulitiplayer == 16) {
+                bricks = bricks - Planetu5_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 16;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-5.png')";
+                document.getElementById("Planet_2x_5").remove();
+                document.getElementById("Planet_2x_5").innerText = "";
+                document.getElementById("Planet").innerText = "Planet - generates "+formatNumber(30000000*Planet_mulitiplayer, {useOrderSuffix: true, decimals: 1})+" bricks per second and costs " + formatNumber(Planet_cost, {useOrderSuffix: true, decimals: 2});
+            }
+        }
+        document.getElementById("Planet_2x_6").onclick = () => {
+            if(bricks >= Planetu6_cost && Planet_mulitiplayer == 32) {
+                bricks = bricks - Planetu6_cost;
+                Planet_mulitiplayer = Planet_mulitiplayer + 32;
+                document.getElementById("Planet").style.backgroundImage = "url('sprites/ziemia-6.png')";
+                document.getElementById("Planet_2x_6").remove();
+                document.getElementById("Planet_2x_6").innerText = "";
+                document.getElementById("Planet").innerText = "Planet - generates "+formatNumber(30000000*Planet_mulitiplayer, {useOrderSuffix: true, decimals: 1})+" bricks per second and costs " + formatNumber(Planet_cost, {useOrderSuffix: true, decimals: 2});
+            }
+        }
+    </script>
+
+    <script>
+        var systemu1_cost = 1000000000000;
+        var systemu2_cost = 5000000000000;
+        var systemu3_cost = 75000000000000;
+        var systemu4_cost = 937500000000000;
+        var systemu5_cost = 7031250000000000;
+        var systemu6_cost = 35156250000000000;
+
+        document.getElementById("system_2x_1").innerText = "2x/s from solar systems cost: " + formatNumber(systemu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("system_2x_2").innerText = "2x/s from solar systems cost: " + formatNumber(systemu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("system_2x_3").innerText = "2x/s from solar systems cost: " + formatNumber(systemu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("system_2x_4").innerText = "2x/s from solar systems cost: " + formatNumber(systemu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("system_2x_5").innerText = "2x/s from solar systems cost: " + formatNumber(systemu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("system_2x_6").innerText = "2x/s from solar systems cost: " + formatNumber(systemu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("system_2x_1").onclick = () => {
+            if(bricks >= systemu1_cost && system_multiplayer == 1) {
+                bricks = bricks - systemu1_cost;
+                system_multiplayer = system_multiplayer + 1;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-1.png')";
+                document.getElementById("system_2x_1").remove();
+                document.getElementById("system_2x_1").innerText = "";
+            }
+        }
+        document.getElementById("system_2x_2").onclick = () => {
+            if(bricks >= systemu2_cost && system_multiplayer == 2) {
+                bricks = bricks - systemu2_cost;
+                system_multiplayer = system_multiplayer + 2;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-2.png')";
+                document.getElementById("system_2x_2").remove();
+                document.getElementById("system_2x_2").innerText = "";
+            }
+        }
+        document.getElementById("system_2x_3").onclick = () => {
+            if(bricks >= systemu3_cost && system_multiplayer == 4) {
+                bricks = bricks - systemu3_cost;
+                system_multiplayer = system_multiplayer + 4;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-3.png')";
+                document.getElementById("system_2x_3").remove();
+                document.getElementById("system_2x_3").innerText = "";
+            }
+        }
+        document.getElementById("system_2x_4").onclick = () => {
+            if(bricks >= systemu4_cost && system_multiplayer == 8) {
+                bricks = bricks - systemu4_cost;
+                system_multiplayer = system_multiplayer + 8;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-4.png')";
+                document.getElementById("system_2x_4").remove();
+                document.getElementById("system_2x_4").innerText = "";
+            }
+        }
+        document.getElementById("system_2x_5").onclick = () => {
+            if(bricks >= systemu5_cost && system_multiplayer == 16) {
+                bricks = bricks - systemu5_cost;
+                system_multiplayer = system_multiplayer + 16;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-5.png')";
+                document.getElementById("system_2x_5").remove();
+                document.getElementById("system_2x_5").innerText = "";
+            }
+        }
+        document.getElementById("system_2x_6").onclick = () => {
+            if(bricks >= systemu6_cost && system_multiplayer == 32) {
+                bricks = bricks - systemu6_cost;
+                system_multiplayer = system_multiplayer + 32;
+                document.getElementById("system").style.backgroundImage = "url('sprites/systemsloneczny-6.png')";
+                document.getElementById("system_2x_6").remove();
+                document.getElementById("system_2x_6").innerText = "";
+            }
+        }
+    </script>
+
+    <script>
+        var Galaxyu1_cost = 115000000000000;
+        var Galaxyu2_cost = 575000000000000;
+        var Galaxyu3_cost = 8625000000000000;
+        var Galaxyu4_cost = 107812500000000000;
+        var Galaxyu5_cost = 808593750000000000;
+        var Galaxyu6_cost = 4042968750000000000;
+
+        document.getElementById("Galaxy_2x_1").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu1_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Galaxy_2x_2").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu2_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Galaxy_2x_3").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu3_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Galaxy_2x_4").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu4_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Galaxy_2x_5").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu5_cost, {useOrderSuffix: true, decimals: 2});
+        document.getElementById("Galaxy_2x_6").innerText = "2x/s from Galaxies cost: " + formatNumber(Galaxyu6_cost, {useOrderSuffix: true, decimals: 2});
+
+        document.getElementById("Galaxy_2x_1").onclick = () => {
+            if(bricks >= Galaxyu1_cost && Galaxy_multiplayer == 1) {
+                bricks = bricks - Galaxyu1_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 1;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-1.png')";
+                document.getElementById("Galaxy_2x_1").remove();
+                document.getElementById("Galaxy_2x_1").innerText = "";
+            }
+        }
+        document.getElementById("Galaxy_2x_2").onclick = () => {
+            if(bricks >= Galaxyu2_cost && Galaxy_multiplayer == 2) {
+                bricks = bricks - Galaxyu2_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 2;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-2.png')";
+                document.getElementById("Galaxy_2x_2").remove();
+                document.getElementById("Galaxy_2x_2").innerText = "";
+            }
+        }
+        document.getElementById("Galaxy_2x_3").onclick = () => {
+            if(bricks >= Galaxyu3_cost && Galaxy_multiplayer == 4) {
+                bricks = bricks - Galaxyu3_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 4;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-3.png')";
+                document.getElementById("Galaxy_2x_3").remove();
+                document.getElementById("Galaxy_2x_3").innerText = "";
+            }
+        }
+        document.getElementById("Galaxy_2x_4").onclick = () => {
+            if(bricks >= Galaxyu4_cost && Galaxy_multiplayer == 8) {
+                bricks = bricks - Galaxyu4_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 8;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-4.png')";
+                document.getElementById("Galaxy_2x_4").remove();
+                document.getElementById("Galaxy_2x_4").innerText = "";
+            }
+        }
+        document.getElementById("Galaxy_2x_5").onclick = () => {
+            if(bricks >= Galaxyu5_cost && Galaxy_multiplayer == 16) {
+                bricks = bricks - Galaxyu5_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 16;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-5.png')";
+                document.getElementById("Galaxy_2x_5").remove();
+                document.getElementById("Galaxy_2x_5").innerText = "";
+            }
+        }
+        document.getElementById("Galaxy_2x_6").onclick = () => {
+            if(bricks >= Galaxyu6_cost && Galaxy_multiplayer == 32) {
+                bricks = bricks - Galaxyu6_cost;
+                Galaxy_multiplayer = Galaxy_multiplayer + 32;
+                document.getElementById("Galaxy").style.backgroundImage = "url('sprites/Galaxy-6.png')";
+                document.getElementById("Galaxy_2x_6").remove();
+                document.getElementById("Galaxy_2x_6").innerText = "";
+            }
+        }
+    </script>
+
+    <script src="save and load.js"></script>
+    
+    <script src="stats.js"></script>
+
+</body>
+</html>

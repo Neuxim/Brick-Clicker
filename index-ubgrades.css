@@ -1,0 +1,722 @@
+#ubgrades{
+    width: 30%;
+    float: right;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    place-content: space-between space-between;
+}
+#clicking_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clicking_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clicking_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clicking_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clicking_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clicking_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/brick-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#aura_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#aura_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#aura_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#aura_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#aura_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#aura_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/aura-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#cement_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cement_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/cement-6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#wall_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#wall_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/wall-6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#House_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#House_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/House-6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Estate_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Estate_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Estate-6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#City_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#City_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/City-6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#voivodeship_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#voivodeship_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/voivodeship-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Country_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Country_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Country-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Continent_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Continent_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Continent-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Planet_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Planet_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/ziemia-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#system_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#system_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/systemsloneczny-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Galaxy_2x_1{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy_2x_2{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy_2x_3{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy_2x_4{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy_2x_5{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#Galaxy_2x_6{
+    width: 100px;
+    height: 100px;
+    background-image: url(sprites/Galaxy-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
