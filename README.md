@@ -1,3 +1,21 @@
+If you want to install the game, download the .exe file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 For fun project, you can use it howewer you like
 
 
