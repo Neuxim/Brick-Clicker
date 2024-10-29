@@ -26,7 +26,7 @@ function addUpgrade(cost, increment, requiredClickBrick, imageUrl, element) {
 }
 
 // Usage
-addUpgrade(clickingu1_cost, 1, 1, 'sprites/brick-1.png', element_clciking_2x_1);
+addUpgrade(clickingu1_cost, 64, 1, 'sprites/brick-1.png', element_clciking_2x_1);
 addUpgrade(clickingu2_cost, 2, 2, 'sprites/brick-2.png', element_clciking_2x_2);
 addUpgrade(clickingu3_cost, 4, 4, 'sprites/brick-3.png', element_clciking_2x_3);
 addUpgrade(clickingu4_cost, 8, 8, 'sprites/brick-4.png', element_clciking_2x_4);
