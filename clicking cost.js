@@ -1,4 +1,4 @@
-var clickingu1_cost = 100;
+var clickingu1_cost = 1000;
 var clickingu2_cost = 250;
 var clickingu3_cost = 500;
 var clickingu4_cost = 850;
