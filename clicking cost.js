@@ -14,58 +14,21 @@ const element_clciking_2x_4 = document.getElementById("clicking_2x_4");
 const element_clciking_2x_5 = document.getElementById("clicking_2x_5");
 const element_clciking_2x_6 = document.getElementById("clicking_2x_6");
 
-element_clciking_2x_1.innerText = "2x income from basic clicking cost: " + formatNumber(clickingu1_cost, {useOrderSuffix: true, decimals: 2});
-element_clciking_2x_2.innerText = "2x income from basic clicking cost: " + formatNumber(clickingu2_cost, {useOrderSuffix: true, decimals: 2});
-element_clciking_2x_3.innerText = "2x income from basic clicking cost: " + formatNumber(clickingu3_cost, {useOrderSuffix: true, decimals: 2});
-element_clciking_2x_4.innerText = "2x income from basic clicking cost: " + formatNumber(clickingu4_cost, {useOrderSuffix: true, decimals: 2});
-element_clciking_2x_5.innerText = "4x income from basic clicking cost: " + formatNumber(clickingu5_cost, {useOrderSuffix: true, decimals: 2});
-element_clciking_2x_6.innerText = "8x income from basic clicking cost: " + formatNumber(clickingu6_cost, {useOrderSuffix: true, decimals: 2});
+function addUpgrade(cost, increment, requiredClickBrick, imageUrl, element) {
+    element.onclick = () => {
+        if (bricks >= cost && clickbrick === requiredClickBrick) {
+            bricks -= cost;
+            clickbrick += increment;
+            element_big_brick.style.backgroundImage = `url('${imageUrl}')`;
+            element.remove();
+        }
+    };
+}
 
-element_clciking_2x_1.onclick = () => {
-    if(bricks >= clickingu1_cost && clickbrick == 1) {
-        bricks = bricks - clickingu1_cost;
-        clickbrick = clickbrick + 1;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-1.png')";
-        element_clciking_2x_1.remove();
-    }
-}
-element_clciking_2x_2.onclick = () => {
-    if(bricks >= clickingu2_cost && clickbrick == 2) {
-        bricks = bricks - clickingu2_cost;
-        clickbrick = clickbrick + 2;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-2.png')";
-        element_clciking_2x_2.remove();
-    }
-}
-element_clciking_2x_3.onclick = () => {
-    if(bricks >= clickingu3_cost && clickbrick == 4) {
-        bricks = bricks - clickingu3_cost;
-        clickbrick = clickbrick + 4;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-3.png')";
-        element_clciking_2x_3.remove();
-    }
-}
-element_clciking_2x_4.onclick = () => {
-    if(bricks >= clickingu4_cost && clickbrick == 8) {
-        bricks = bricks - clickingu4_cost;
-        clickbrick = clickbrick + 8;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-4.png')";
-        element_clciking_2x_4.remove();
-    }
-}
-element_clciking_2x_5.onclick = () => {
-    if(bricks >= clickingu5_cost && clickbrick == 16) {
-        bricks = bricks - clickingu5_cost;
-        clickbrick = clickbrick * 4;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-5.png')";
-        element_clciking_2x_5.remove();
-    }
-}
-element_clciking_2x_6.onclick = () => {
-    if(bricks >= clickingu6_cost && clickbrick == 64) {
-        bricks = bricks - clickingu6_cost;
-        clickbrick = clickbrick * 8;
-        element_big_brick.style.backgroundImage = "url('sprites/brick-6.png')";
-        element_clciking_2x_6.remove();
-    }
-}
+// Usage
+addUpgrade(clickingu1_cost, 1, 1, 'sprites/brick-1.png', element_clciking_2x_1);
+addUpgrade(clickingu2_cost, 2, 2, 'sprites/brick-2.png', element_clciking_2x_2);
+addUpgrade(clickingu3_cost, 4, 4, 'sprites/brick-3.png', element_clciking_2x_3);
+addUpgrade(clickingu4_cost, 8, 8, 'sprites/brick-4.png', element_clciking_2x_4);
+addUpgrade(clickingu5_cost, 16, 16, 'sprites/brick-5.png', element_clciking_2x_5);
+addUpgrade(clickingu6_cost, 64, 64, 'sprites/brick-6.png', element_clciking_2x_6);
